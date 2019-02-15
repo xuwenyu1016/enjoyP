@@ -1,4 +1,4 @@
-<?php exit;?>0015761400897184bb8ac1742200c70a82b60af42e34s:4394:"a:2:{s:8:"template";s:4330:"<section class="style-choice pt-40 pb-40 index-slide">
+<?php exit;?>001576205928842e396774af9a74f80d7e51929a5585s:4534:"a:2:{s:8:"template";s:4470:"<section class="style-choice pt-40 pb-40 index-slide">
     <div class="container">
         <div class="title-dashed">
             <h2 class="text-c pb-5 pt-5">更多别墅</h2>
@@ -9,11 +9,11 @@
             <?php $listList = service("article","Label","contentList",array( "app"=>"Article", "label"=>"contentList", "class_id"=>2, "sub"=>true, "limit"=>3, "expand_id"=>3, "order"=>"views asc"));  if(is_array($listList)) foreach($listList as $list){ ?>
             <article class="mt-30 col-sm-4 col-xs-12">
                 <div class="">
-                    <a>
+                    <a href="<?php echo $list["aurl"];?>">
                         <img src="<?php echo $list["indexLeftImg"];?>" class="img-responsive" alt="<?php echo $list["indexLeftImgCaption"];?>" />
                         <p class="caption f-14"><?php echo $list["indexLeftImgCaption"];?></p>
                     </a>
-                    <a>
+                    <a href="<?php echo $list["aurl"];?>">
                         <div class="pd-20 bg-fff style-choice-article">
                             <p class="stying-head f-22 mb-5 mt-5 text-l"><b><?php echo $list["title"];?></b></p>
                             <p class="tags mt-10">
@@ -39,11 +39,11 @@
                     <div class="index-slide-box cl">
                         <article class="mt-30 col-sm-4 col-xs-12">
                             <div class="">
-                                <a>
+                                <a href="<?php echo $list["aurl"];?>">
                                     <img src="<?php echo $list["indexLeftImg"];?>" class="img-responsive" alt="<?php echo $list["indexLeftImgCaption"];?>" />
                                     <p class="caption f-14"><?php echo $list["indexLeftImgCaption"];?></p>
                                 </a>
-                                <a>
+                                <a href="<?php echo $list["aurl"];?>">
                                     <div class="pd-20 bg-fff style-choice-article">
                                         <p class="stying-head f-22 mb-5 mt-5 text-l"><b><?php echo $list["title"];?></b></p>
                                         <p class="tags mt-10">
@@ -71,4 +71,4 @@
 </section>
 
 
-";s:12:"compile_time";i:1544604089;}";
+";s:12:"compile_time";i:1544669928;}";

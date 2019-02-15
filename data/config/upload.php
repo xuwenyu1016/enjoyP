@@ -1,8 +1,8 @@
 <?php
 return array(
     /* 上传设置 */
-    'UPLOAD_SIZE'=>15,
-    'UPLOAD_EXTS'=>'jpg,gif,png,excel,pdf',
+    'UPLOAD_SIZE'=>200,
+    'UPLOAD_EXTS'=>'jpg,gif,png,pdf,PDF',
     'THUMB_STATUS'=>0,
     'THUMB_TYPE'=>1,
     'THUMB_WIDTH'=>800,

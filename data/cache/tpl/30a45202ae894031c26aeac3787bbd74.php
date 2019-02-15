@@ -1,4 +1,4 @@
-<?php exit;?>0015761363854f76c0667731069928ae2674017c0412s:11424:"a:2:{s:8:"template";s:11359:"<form method="post" class="form-x dux-form form-auto" id="form" action="<?php echo url('upload');?>">
+<?php exit;?>001576141022759c1e52515561091d30193de7412d4as:11424:"a:2:{s:8:"template";s:11359:"<form method="post" class="form-x dux-form form-auto" id="form" action="<?php echo url('upload');?>">
     <div class="panel dux-box  active">
         <div class="panel-head">
             <strong>上传设置</strong>
@@ -217,4 +217,4 @@
     Do.ready('base', function () {
         $('#form').duxForm();
     });
-</script>";s:12:"compile_time";i:1544600385;}";
+</script>";s:12:"compile_time";i:1544605022;}";

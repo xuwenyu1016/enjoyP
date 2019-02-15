@@ -1,4 +1,4 @@
-<?php exit;?>00157613850896a210d5d933134b13c9727d770e68d0s:9017:"a:2:{s:8:"template";s:8953:"<?php $__Template->display("themes/default/head"); ?>
+<?php exit;?>00157622338742f32537cb83faa11bc7a0dde35c6855s:9952:"a:2:{s:8:"template";s:9888:"<?php $__Template->display("themes/default/head"); ?>
 
 
 <section class="villa-content villa-content-f">
@@ -9,10 +9,10 @@
 
             <p class="mg-0 f-14"><a href="/">首页</a><?php foreach ($crumb as $vo) { ?> &gt; <a href="<?php echo $vo["url"];?>"><?php echo $vo["name"];?></a><?php } ?></p>
 
+            <img src="<?php echo $contentInfo["contentRightImg"];?>" class="img-responsive visible-xs xs-left-radius" alt="<?php echo $contentInfo["title"];?>" />
 
-            <h2><?php echo $contentInfo["title"];?></h2>
+            <h2 id="jumpHere"><?php echo $contentInfo["title"];?></h2>
 
-            <img src="<?php echo $contentInfo["contentRightImg"];?>" class="img-responsive visible-xs" alt="<?php echo $contentInfo["title"];?>" />
 
             <p class="f-14 c-999 mt-10 mb-10"><?php echo $contentInfo["content"];?></p>
 
@@ -67,9 +67,9 @@
         <li class="hidden-xs col-sm-5 col-md-6" style="background: url(<?php echo $contentInfo["contentLeftImg"];?>) center/cover no-repeat;">&nbsp;</li>
         <li class="col-xs-12 col-sm-7 col-md-6">
 
-            <img src="<?php echo $contentInfo["contentLeftImg"];?>" class="img-responsive visible-xs" alt="<?php echo $contentInfo["title"];?>" />
-
             <h2>别墅设置</h2>
+
+            <img src="<?php echo $contentInfo["contentLeftImg"];?>" class="img-responsive visible-xs xs-right-radius" alt="<?php echo $contentInfo["title"];?>" />
 
             <article>
                 <p><b>面积：</b><?php echo $contentInfo["size"];?>(m<sup>2</sup>) &emsp;&emsp;&emsp;<b>容纳人数：</b><?php echo $contentInfo["containPeople"];?>(人)</p>
@@ -119,9 +119,12 @@
                                 <img src="<?php echo $contentInfo["entertainImg1_3"];?>" class="img-responsive" alt="<?php echo $contentInfo["title"];?>" />
                             </div>
                         </div>
+
+                        <div class="swiper-button-prev "><i class="Hui-iconfont Hui-iconfont-slider-left"></i></div><!--左箭头-->
+                        <div class="swiper-button-next"><i class="Hui-iconfont Hui-iconfont-slider-right"></i></div><!--右箭头-->
                     </div>
 
-                    <div class="pd-10 bg-fff">
+                    <div class="pd-10 bg-fff r-box">
                         <p class="stying-head f-20 mb-5"><b><?php echo $contentInfo["entertainTitle1"];?></b></p>
                         <p class="f-14 style-content"><?php echo $contentInfo["entertainDetail1"];?></p>
 
@@ -140,8 +143,10 @@
                                 <img src="<?php echo $contentInfo["entertainImg2_3"];?>" class="img-responsive" alt="<?php echo $contentInfo["title"];?>" />
                             </div>
                         </div>
+                        <div class="swiper-button-prev "><i class="Hui-iconfont Hui-iconfont-slider-left"></i></div><!--左箭头-->
+                        <div class="swiper-button-next"><i class="Hui-iconfont Hui-iconfont-slider-right"></i></div><!--右箭头-->
                     </div>
-                    <div class="pd-10 bg-fff">
+                    <div class="pd-10 bg-fff r-box">
                         <p class="stying-head f-20 mb-5"><b><?php echo $contentInfo["entertainTitle2"];?></b></p>
                         <p class="f-14 style-content"><?php echo $contentInfo["entertainDetail2"];?></p>
 
@@ -163,8 +168,10 @@
                                 <img src="<?php echo $contentInfo["entertainImg3_3"];?>" class="img-responsive" alt="<?php echo $contentInfo["title"];?>" />
                             </div>
                         </div>
+                        <div class="swiper-button-prev "><i class="Hui-iconfont Hui-iconfont-slider-left"></i></div><!--左箭头-->
+                        <div class="swiper-button-next"><i class="Hui-iconfont Hui-iconfont-slider-right"></i></div><!--右箭头-->
                     </div>
-                    <div class="pd-10 bg-fff">
+                    <div class="pd-10 bg-fff r-box">
                         <p class="stying-head f-20 mb-5"><b><?php echo $contentInfo["entertainTitle3"];?></b></p>
                         <p class="f-14 style-content"><?php echo $contentInfo["entertainDetail3"];?></p>
 
@@ -175,8 +182,8 @@
 
 
             <div class="cl btns">
-                <p class="col-xs-6"><a href="">立即预订</a></p>
-                <p class="col-xs-6"><a target="_blank" href="<?php echo $contentInfo["cottageFiles"];?>">下载别墅介绍</a></p>
+                <p class="col-xs-6"><a href="#jumpHere">立即预订</a></p>
+                <p class="col-xs-6"><a target="_blank" href="<?php echo $contentInfo["cottageFiles"];?>">查看详细别墅介绍</a></p>
             </div>
         </div>
 
@@ -187,6 +194,8 @@
 
 <?php $__Template->display("themes/default/suggests"); ?>
 
+<?php $__Template->display("themes/default/contact"); ?>
+
 <?php $__Template->display("themes/default/footer"); ?>
 
-<?php $__Template->display("themes/default/foot"); ?>";s:12:"compile_time";i:1544602508;}";
+<?php $__Template->display("themes/default/foot"); ?>";s:12:"compile_time";i:1544687387;}";

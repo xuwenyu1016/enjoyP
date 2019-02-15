@@ -1,4 +1,4 @@
-<?php exit;?>001576139416ba45fad00fddefdea645d526e7b7f466s:2125:"a:2:{s:8:"template";s:2061:"<?php $__Template->display("themes/default/head"); ?>
+<?php exit;?>0015762067646b665253ad0f325036059c44df6f9fe8s:2183:"a:2:{s:8:"template";s:2119:"<?php $__Template->display("themes/default/head"); ?>
 
 <section class="strategy-container pt-40 pb-40">
     <div class="container">
@@ -51,6 +51,8 @@
 
 <?php $__Template->display("themes/default/suggests"); ?>
 
+<?php $__Template->display("themes/default/contact"); ?>
+
 <?php $__Template->display("themes/default/footer"); ?>
 
-<?php $__Template->display("themes/default/foot"); ?>";s:12:"compile_time";i:1544603416;}";
+<?php $__Template->display("themes/default/foot"); ?>";s:12:"compile_time";i:1544670764;}";

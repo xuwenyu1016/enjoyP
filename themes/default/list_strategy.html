@@ -1,0 +1,58 @@
+<!--#include file="head.html"-->
+
+<section class="strategy-container pt-40 pb-40">
+    <div class="container">
+
+        <p class="mg-0 f-14"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}--> &gt; <a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+        <div class="title-dashed">
+            <h2 class="text-c pb-5 pt-5">攻略资讯</h2>
+            <p class="text-c capitalize f-14 mb-5">strategy information</p>
+        </div>
+
+        <ul class="mt-30 mb-20 strategy-choice">
+            <!--foreach{$condition as $vo}-->
+
+            <li class="select-all <!--if{$vo.value==="all"}-->  selected <!--{/if}--> ">
+                <a href="{$vo.url}" class="text-c f-16">全部</a>
+            </li>
+            <!--foreach{$vo.config as $v}-->
+            <li <!--if{$v.value == $v.i}--> class="selected" <!--{/if}--> >
+                <a href="{$v.url}" class="text-c f-16">{$v.name}</a>
+            </li>
+            <!--{/foreach}-->
+
+            <!--{/foreach}-->
+        </ul>
+
+        <div class="strategy-box">
+            <!--foreach{$pageList as $vo}-->
+
+            <article>
+                <a href="{$vo.aurl}">
+                    <img src="{$vo.image}" class="am-img-responsive am-center" width="250" alt="{$vo.title}" />
+
+                    <div class="pl-30">
+                        <p class="f-24 pt-5 pb-5"><b>{$vo.title}</b></p>
+                        <p class="f-14 pt-5">{$vo.description}</p>
+
+                        <span class="f-16 text-c">点击阅读 >></span>
+                    </div>
+
+                </a>
+            </article>
+            <!--{/foreach}-->
+
+            <div class="pages f-14 mt-20">{$page}</div>
+        </div>
+    </div>
+
+</section>
+
+<!--#include file="suggests.html"-->
+
+<!--#include file="contact.html"-->
+
+<!--#include file="footer.html"-->
+
+<!--#include file="foot.html"-->

@@ -1,4 +1,4 @@
-<?php exit;?>0015761371284b86a8f804b38514a0958f8edd6e2e0fs:2553:"a:2:{s:8:"template";s:2489:"<footer class="pt-40 pb-10">
+<?php exit;?>0015762233127c00952f62b490ff644334c6cfef6080s:2575:"a:2:{s:8:"template";s:2511:"<footer class="pt-40 pb-10">
     <div class="container">
         <img src="/public/assets/images/33.png" class="img-responsive" alt="" />
 
@@ -7,7 +7,7 @@
                 <a href="/" class="text-c c-white f-14">首页</a>
             </li>
             <li class="col-sm-3 col-xs-3">
-                <a href="" class="text-c c-white f-14">别墅介绍</a>
+                <a href="/#villaIntro" class="text-c c-white f-14">别墅介绍</a>
             </li>
             <li class="col-sm-3 col-xs-3">
                 <a href="/gongluezixun/select/strategyChoice-3.html?class_id=1" class="text-c c-white f-14">活动回忆录</a>
@@ -27,7 +27,7 @@
 
     <img src="/public/assets/images/32.png" class="img-responsive qrCode mb-5" alt="立即开始咨询">
 
-    <p class="text-c">微信搜索“尼古丁的苦涩”<br>立即开始咨询</p>
+    <p class="text-c">微信搜索“nickwang1026”<br>立即开始咨询</p>
 
     <img src="/public/assets/images/33.png" class="img-responsive bottom-logo" alt="">
 
@@ -44,7 +44,7 @@
             </a>
         </li>
         <li class="col-xs-3">
-            <a href="">
+            <a href="/#villaIntro">
                 <img src="/public/assets/images/42.png" class="am-img-responsive">
                 <span class="am-navbar-label">别墅介绍</span>
             </a>
@@ -57,10 +57,10 @@
             </a>
         </li>
         <li class="col-xs-3">
-            <a href="tel:400-655-6122">
+            <a href="/form-guestbook.html">
                 <img src="/public/assets/images/44.png" class="am-img-responsive">
                 <span class="am-navbar-label">联系我们</span>
             </a>
         </li>
     </ul>
-</div>";s:12:"compile_time";i:1544601128;}";
+</div>";s:12:"compile_time";i:1544687312;}";

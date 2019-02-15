@@ -1,9 +1,26 @@
-<?php exit;?>001576139151072e20e36325135abcbd9cc5ad0b1bffs:11613:"a:2:{s:8:"template";s:11548:"<?php $__Template->display("themes/default/head"); ?>
+<?php exit;?>0015772583154f25e21daf993d5b9eeed58486a82b98s:12709:"a:2:{s:8:"template";s:12644:"<?php $__Template->display("themes/default/head"); ?>
 
 <section class="banter pos-r">
     <div class="container">
         <h1 class="text-c c-white">爱聚派，给你与众不同</h1>
         <h3 class="text-c c-white capitalize">enjoy party, out of the ordinary</h3>
+        <button onClick="modaldemo1()"><img src="/public/assets/images/46.png" class="img-responsive lazyload" alt="" /></button>
+
+        <div id="modal-demo1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content radius">
+                    <div class="modal-header">
+                        <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                    </div>
+                    <div class="modal-body">
+                        <video id="player1" controls>
+                            <source src="http://enjoyparty.oss-cn-beijing.aliyuncs.com/video1/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="features pos-a pos-left">
@@ -53,12 +70,14 @@
             <p class="f-14">爱聚派以爱之名，聚集每一个客户的快乐。我们甄选行业内无可挑剔的别墅，包括自带网红气质的心动小屋、森林童话般的向往小屋、大气私密的月神庄园等等，我们用真诚与细致的服务，让每一个客户度过一个美好的假期。在这里，你可以享受到全新的设备，优质的别墅，重要的是，1对1的服务。我们的一切都是——以爱之名。</p>
             <p class="f-14">每一位爱聚派的管家欢迎您的莅临，也许一切的缘分，从一通电话开始.......</p>
 
-            <a class="consult c-bt-b c-white text-c lh-30 f-14 mt-15">立即咨询</a>
+            <a class="consult c-bt-b c-white text-c lh-30 f-14 mt-15 visible-xs" href="/form-guestbook.html">立即咨询</a>
+
+            <a class="consult c-bt-b c-white text-c lh-30 f-14 mt-15 hidden-xs" href="#contactForm">立即咨询</a>
         </div>
     </div>
 </section>
 
-<section class="style-choice pt-40 pb-40 index-slide">
+<section class="style-choice pt-40 pb-40 index-slide" id="villaIntro">
     <div class="container">
         <div class="title-dashed">
             <h2 class="text-c pb-5 pt-5">别墅介绍</h2>
@@ -102,7 +121,7 @@
                                             <?php $a = $list['keywords'];$arr = explode(',', $a); ?>
                                             <?php foreach ($arr as $a): ?><span><?=$a; ?></span><?php endforeach; ?>
                                         </p>
-                                        <p class="f-14 style-content mt-15"><?php echo $list["description"];?></p>
+                                        <p class="f-14 style-content mt-15"><?php echo $list["description"];?> <span class="hidden-xs"> >> 查看更多</span></p>
                                         <p class="ending-tags mt-20 f-14"><img src="/public/assets/images/18.png" class="mr-10" alt="" /> 适合：<?php echo $list["numRange"];?>人
                                             <img src="/public/assets/images/19.png" class="ml-10 mr-10" alt="" /> 行程：<?php echo $list["days"];?>天</p>
                                     </div>
@@ -231,10 +250,8 @@
 
 </section>
 
-
-
 <?php $__Template->display("themes/default/contact"); ?>
 
 <?php $__Template->display("themes/default/footer"); ?>
 
-<?php $__Template->display("themes/default/foot"); ?>";s:12:"compile_time";i:1544603151;}";
+<?php $__Template->display("themes/default/foot"); ?>";s:12:"compile_time";i:1545722315;}";
