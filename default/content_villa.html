@@ -1,0 +1,201 @@
+<!--#include file="head.html"-->
+
+
+<section class="villa-content villa-content-f">
+
+
+    <ul class="cl pt-40 pb-40 villa-content-view">
+        <li class="col-xs-12 col-sm-7 col-md-6">
+
+            <p class="mg-0 f-14"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}--> &gt; <a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+            <img src="{$contentInfo.contentRightImg}" class="img-responsive visible-xs xs-left-radius" alt="{$contentInfo.title}" />
+
+            <h2 id="jumpHere">{$contentInfo.title}</h2>
+
+
+            <p class="f-14 c-999 mt-10 mb-10">{$contentInfo.content}</p>
+
+            <form action="{U('DuxCms/Form/push')}" method="post">
+                <div>
+                    <span>姓名</span>
+                    <input type="text" placeholder="" name="name" required="" />
+
+                    <span class="pl-5">人数</span>
+                    <input type="number" placeholder="" name="visitNum" />
+                </div>
+
+                <div>
+                    <span>日期</span>
+                    <input type="text" placeholder="" name="visitTime" required="" />
+                </div>
+
+                <div>
+                    <span>目的</span>
+                    <input type="text" placeholder="" name="msg" />
+                </div>
+
+                <div>
+                    <span>邮箱</span>
+                    <input type="email" placeholder="" name="email" required="" />
+                </div>
+
+                <div class="validate">
+                    <span>验证码</span>
+                    <input name="checkcode" type="text" maxlength="4" size="4" placeholder="" required="" />
+                    <img title="点击刷新" src="{url('duxcms/ValidateCode/index')}" align="absbottom" onclick="this.src='{url('duxcms/ValidateCode/index')}&'+Math.random();" />
+                </div>
+
+                <div>
+                    <input type="hidden" name="token" value="<!--echo{app="DuxCms" label="formToken" table="guestbook"}-->">
+                    <input type="hidden" name="table" value="guestbook">
+                    <button type="submit">预定别墅</button>
+                </div>
+                <!--<a href="">联系我们</a>-->
+
+
+            </form>
+        </li>
+        <li class="hidden-xs col-sm-5 col-md-6" style="background: url({$contentInfo.contentRightImg}) center/cover no-repeat;">&nbsp;</li>
+    </ul>
+
+</section>
+
+<section class="villa-content villa-content-c">
+    <ul class="cl pt-10 pb-40 villa-content-view">
+
+        <li class="hidden-xs col-sm-5 col-md-6" style="background: url({$contentInfo.contentLeftImg}) center/cover no-repeat;">&nbsp;</li>
+        <li class="col-xs-12 col-sm-7 col-md-6">
+
+            <h2>别墅设置</h2>
+
+            <img src="{$contentInfo.contentLeftImg}" class="img-responsive visible-xs xs-right-radius" alt="{$contentInfo.title}" />
+
+            <article>
+                <p><b>面积：</b>{$contentInfo.size}(m<sup>2</sup>) &emsp;&emsp;&emsp;<b>容纳人数：</b>{$contentInfo.containPeople}(人)</p>
+            </article>
+            <article>
+                <p><b>空间目的：</b></p>
+                <p>{$contentInfo.goal}</p>
+            </article>
+
+            <article>
+                <p><b>可使用时间：</b>{$contentInfo.timeAvailable}</p>
+            </article>
+
+            <article>
+                <p><b>地址：</b></p>
+                <p>{$contentInfo.address}</p>
+            </article>
+
+            <article>
+                <p><b>空间使用须知：</b></p>
+                <p>（1）{$contentInfo.notice1}<br/><!--if{ $contentInfo['notice2'] }-->（2）{$contentInfo.notice2}<br/><!--{/if}--><!--if{ $contentInfo['notice3'] }-->（3）{$contentInfo.notice3}<br/><!--{/if}--><!--if{ $contentInfo['notice4'] }-->（4）{$contentInfo.notice4}<br/><!--{/if}--><!--if{ $contentInfo['notice5'] }-->（5）{$contentInfo.notice5}<!--{/if}--></p>
+            </article>
+        </li>
+    </ul>
+
+</section>
+
+<section class="villa-content-e pb-40">
+    <img src="{$contentInfo.midBanter}" class="img-responsive" alt="{$contentInfo.title}" />
+
+    <div class="container">
+
+        <div class="container-entertain">
+            <h2 class="text-c">娱乐设施</h2>
+
+            <article class="mt-20 cl">
+                <div class="col-sm-4">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg1}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg1_2}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg1_3}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev "><i class="Hui-iconfont Hui-iconfont-slider-left"></i></div><!--左箭头-->
+                        <div class="swiper-button-next"><i class="Hui-iconfont Hui-iconfont-slider-right"></i></div><!--右箭头-->
+                    </div>
+
+                    <div class="pd-10 bg-fff r-box">
+                        <p class="stying-head f-20 mb-5"><b>{$contentInfo.entertainTitle1}</b></p>
+                        <p class="f-14 style-content">{$contentInfo.entertainDetail1}</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg2}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg2_2}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg2_3}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev "><i class="Hui-iconfont Hui-iconfont-slider-left"></i></div><!--左箭头-->
+                        <div class="swiper-button-next"><i class="Hui-iconfont Hui-iconfont-slider-right"></i></div><!--右箭头-->
+                    </div>
+                    <div class="pd-10 bg-fff r-box">
+                        <p class="stying-head f-20 mb-5"><b>{$contentInfo.entertainTitle2}</b></p>
+                        <p class="f-14 style-content">{$contentInfo.entertainDetail2}</p>
+
+
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg3}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg3_2}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{$contentInfo.entertainImg3_3}" class="img-responsive" alt="{$contentInfo.title}" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev "><i class="Hui-iconfont Hui-iconfont-slider-left"></i></div><!--左箭头-->
+                        <div class="swiper-button-next"><i class="Hui-iconfont Hui-iconfont-slider-right"></i></div><!--右箭头-->
+                    </div>
+                    <div class="pd-10 bg-fff r-box">
+                        <p class="stying-head f-20 mb-5"><b>{$contentInfo.entertainTitle3}</b></p>
+                        <p class="f-14 style-content">{$contentInfo.entertainDetail3}</p>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <div class="cl btns">
+                <p class="col-xs-6"><a href="#jumpHere">立即预订</a></p>
+                <p class="col-xs-6"><a target="_blank" href="{$contentInfo.cottageFiles}">查看详细别墅介绍</a></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!--#include file="suggests.html"-->
+
+<!--#include file="contact.html"-->
+
+<!--#include file="footer.html"-->
+
+<!--#include file="foot.html"-->

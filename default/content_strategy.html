@@ -1,0 +1,60 @@
+<!--#include file="head.html"-->
+
+<section class="strategy-container pt-40 pb-40">
+    <div class="container">
+
+        <p class="mg-0 f-14"><a href="__ROOT__/">首页</a><!--foreach{$crumb as $vo}--> &gt; <a href="{$vo.url}">{$vo.name}</a><!--{/foreach}--></p>
+
+        <div class="strategy-article">
+
+            <article class="pd-30">
+                <h2 class="text-c pb-10 pt-5 f-24">{$contentInfo.title}</h2>
+                <p class="text-c f-14">时间：{date('Y-m-d H:i:s',$contentInfo.time)}</p>
+
+                <div class="article-box">{$contentInfo.content}</div>
+
+                <ul class="pt-10 pb-10 pre-next-line">
+                    <li class="col-sm-6">
+                        <div class="f-14"><span>上一篇：</span>
+                            <!--if{empty($prevInfo['aurl'])}-->
+                            <a class="am-link-muted ">暂无</a>
+                            <!--{else}-->
+                            <a href="{$prevInfo.aurl}" class="">{$prevInfo.title}</a>
+                            <!--{/if}-->
+                        </div>
+                    </li>
+                    <li class="col-sm-6">
+
+                        <div class="f-14"><span>下一篇：</span>
+                            <!--if{empty($nextInfo['aurl'])}-->
+                            <a class="">暂无</a>
+                            <!--{else}-->
+                            <a href="{$nextInfo.aurl}" class="">{$nextInfo.title}</a>
+                            <!--{/if}-->
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <aside class="pd-20">
+                <p class="f-16"><b>更多精彩内容</b></p>
+                <!--list{app="DuxCms" label="contentList" class_id=1 sub=true limit=3 order="time desc"}-->
+                <a href="{$list.aurl}">
+                    <img src="{$list.image}" alt="{$list.title}" class="img-responsive" />
+                    <p class="f-14 mt-5 mb-15">{$list.title}</p>
+                </a>
+                <!--{/list}-->
+            </aside>
+
+        </div>
+    </div>
+
+</section>
+
+<!--#include file="suggests.html"-->
+
+<!--#include file="contact.html"-->
+
+<!--#include file="footer.html"-->
+
+<!--#include file="foot.html"-->
